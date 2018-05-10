@@ -35,6 +35,9 @@
     <param name="firmware_tar_gz" value="$(find fetch_drivers)/firmware.tar.gz" />
   </node>
 
+  <!--This is needed for the augmented controller, it publishes the srdf-->
+  <include file="$(find fetch_moveit_config)/launch/planning_context.launch"/>  
+
   <!-- Controllers -->
   <rosparam file="$(find fetch_bringup)/config/default_controllers.yaml" command="load" />
 
