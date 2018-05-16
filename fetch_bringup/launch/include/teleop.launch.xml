@@ -16,5 +16,6 @@
   <node name="controller_reset" pkg="fetch_bringup" type="controller_reset.py" />
 
   <node name="tuck_arm" pkg="fetch_teleop" type="tuck_arm.py" args="--joystick" respawn="true" />
+  <node name="unfurl_arm" pkg="fetch_teleop" type="unfurl_arm.py" args="--joystick" respawn="true" />
 
 </launch>
